@@ -7,13 +7,18 @@ namespace FizzBuzz
     {
         static void Main(string[] args)
         {
-            var numbers = new BuzzDecorator(new FizzDecorator(new Numbers(1,20000)));
+            ClassicFizzBuzz();
+        }
 
-            var numberItems = numbers.GetNumbers();
+        private static void ClassicFizzBuzz()
+        {
+            var wordValuePairGenerator = new BuzzDecorator(new FizzDecorator(new Numbers(1, 20000)));
 
-            foreach (var numberItem in numberItems)
+            var wordValuePairs = wordValuePairGenerator.GetNumbers();
+
+            foreach (var wordValue in wordValuePairs)
             {
-                Console.WriteLine(numberItem.Display);
+                Console.WriteLine(wordValue.Word);
             }
         }
     }

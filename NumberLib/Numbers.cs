@@ -13,13 +13,13 @@ namespace NumberLib
             _end = end;
         }
 
-        public IEnumerable<NumberItem> GetNumbers()
+        public IEnumerable<NumberWordPair> GetNumbers()
         {
             for (var i = _start; i <= _end; i++)
             {
-                yield return new NumberItem() { 
-                    OriginalValue = i, 
-                    Display = i.ToString() 
+                yield return new NumberWordPair() { 
+                    Value = i, 
+                    Word = i.ToString() 
                 };
             }
 

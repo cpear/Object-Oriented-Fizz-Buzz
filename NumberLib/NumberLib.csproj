@@ -43,7 +43,7 @@
     <Compile Include="Decorator.cs" />
     <Compile Include="FizzDecorator.cs" />
     <Compile Include="IComponent.cs" />
-    <Compile Include="NumberItem.cs" />
+    <Compile Include="NumberWordPair.cs" />
     <Compile Include="Numbers.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
   </ItemGroup>

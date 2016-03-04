@@ -9,14 +9,14 @@ namespace NumberLib
             _component = component;
         }
 
-        public override IEnumerable<NumberItem> GetNumbers()
+        public override IEnumerable<NumberWordPair> GetNumbers()
         {
 
             foreach (var number in _component.GetNumbers())
             {
-                if (number.OriginalValue % 3 == 0)
+                if (number.Value % 3 == 0)
                 {
-                    number.Display += " Fizz";
+                    number.Word += " Fizz";
                 }
 
                 yield return number;

@@ -4,6 +4,6 @@ namespace NumberLib
 {
     public interface IComponent
     {
-        IEnumerable<NumberItem> GetNumbers();
+        IEnumerable<NumberWordPair> GetNumbers();
     }
 }

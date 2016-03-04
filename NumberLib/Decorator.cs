@@ -6,6 +6,6 @@ namespace NumberLib
     {
         protected IComponent _component;
 
-        public abstract IEnumerable<NumberItem> GetNumbers();
+        public abstract IEnumerable<NumberWordPair> GetNumbers();
     }
 }
