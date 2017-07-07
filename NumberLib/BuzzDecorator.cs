@@ -4,15 +4,15 @@ namespace NumberLib
 {
     public class BuzzDecorator : Decorator
     {
-        public BuzzDecorator(IComponent component)
+        public BuzzDecorator(Decorator component)
         {
-            _component = component;
+            Component = component;
         }
 
         public override IEnumerable<NumberWordPair> GetNumbers()
         {
 
-            foreach (var number in _component.GetNumbers())
+            foreach (var number in Component.GetNumbers())
             {
                 if (number.Value % 5 == 0)
                 {

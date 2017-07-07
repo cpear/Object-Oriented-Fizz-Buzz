@@ -2,18 +2,18 @@
 
 namespace NumberLib
 {
-    public class Numbers : IComponent
+    public class NumberGenerator : Decorator
     {
         private readonly int _start;
         private readonly int _end;
 
-        public Numbers(int start, int end)
+        public NumberGenerator(int start, int end)
         {
             _start = start;
             _end = end;
         }
 
-        public IEnumerable<NumberWordPair> GetNumbers()
+        public override IEnumerable<NumberWordPair> GetNumbers()
         {
             for (var i = _start; i <= _end; i++)
             {

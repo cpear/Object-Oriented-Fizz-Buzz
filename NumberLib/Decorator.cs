@@ -2,9 +2,9 @@ using System.Collections.Generic;
 
 namespace NumberLib
 {
-    public abstract class Decorator : IComponent
+    public abstract class Decorator
     {
-        protected IComponent _component;
+        protected Decorator Component;
 
         public abstract IEnumerable<NumberWordPair> GetNumbers();
     }

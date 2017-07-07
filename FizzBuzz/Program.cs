@@ -12,7 +12,7 @@ namespace FizzBuzz
 
         private static void ClassicFizzBuzz()
         {
-            var wordValuePairGenerator = new BuzzDecorator(new FizzDecorator(new Numbers(1, 20000)));
+            var wordValuePairGenerator = new BuzzDecorator(new FizzDecorator(new NumberGenerator(1, 20000)));
 
             var wordValuePairs = wordValuePairGenerator.GetNumbers();
 
